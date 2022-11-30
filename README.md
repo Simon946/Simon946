@@ -12,6 +12,7 @@ You can see this mindset in code:
 -code is focussed on readability (clear names, structure)
 -code is short (little/no boilerplate code)
 -code does not use many libraries or compiler settings
+-standard features are used
 
 ### Here are some stats about me:
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Simon946&theme=monokai">
