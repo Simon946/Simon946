@@ -15,7 +15,7 @@ You can see this mindset in code:
 -standard features are used  
 
 ### A note on performance
-Performance only matters when it matters. Of course it is good practice to think of widely used efficient algorithms when beginning a new project, however, do not make code less readable and don't waste your time to make the code quicker. Choose the most intuitive option, not the fastest option. 
+Performance only matters when it matters. Of course it is good practice to think of widely used efficient algorithms when beginning a new project, however, do not make code less readable and don't waste your time to make the code quicker. Choose the most intuitive option, not the fastest option. For some applications, performance has the highest priority but code usability and functionality should be the default priorities.
 Here is what you should do instead if you have measured performance and have noticed that a piece of code is too slow: 
 This is in the order from do first to do last.
 -buy a faster computer -> this might sound expensive, but optimizing code takes time and time is money  
@@ -23,6 +23,11 @@ This is in the order from do first to do last.
 -think of cutting corners in the code -> do not recalculate the same value 1000000x  
 -think of memory -> try to reduce memory allocations with a buffer, keep allocations small or as a multiple of the page size (4096 bytes), place related elements next to each other in an array  
 -finally you can try to make code less readable but faster, although the compiler already does a lot of optimization  
+
+### A note on flexibility
+Fexibility exists in a spectrum. More flexibility is not always better. Little flexibility often allows for specific optimizations or simple code when optimizations are omitted. However, code which is not flexible cannot be easily adapted to be used in a different context, which limits its usability. There exists an area on either side of the spectrum where the code becomes more complex as flexibility increases or decreases. For instance templates and abstract classes make code more flexible but also more complex. And on the opposite end of the spectrum, performance optimizations make the code more complex, with less flexibility as an undesired consequence.
+
+
 
 ### Here are some stats about me:
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Simon946&theme=monokai">
